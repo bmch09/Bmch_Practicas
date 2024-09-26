@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins","Kanit",sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscador-contenedor {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 30px;
+  width: 60vw;
+  padding: 0 10px 0 15px; /* Espaciado entre el borde y los iconos */
+}
+
+.buscador {
+  width: 90%; /* Esto hace que el input ocupe el espacio disponible */
+  border: none;
+  outline: none;
+  height: 5vh;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.fas {
+  padding: 0 10px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.buscador-contenedor:hover {
+  box-shadow: 1px 2px 5px -1px #666;
+}
+
+.buscador-contenedor .fas:hover {
+  cursor: pointer;
+  color: #2e8de6;
+}

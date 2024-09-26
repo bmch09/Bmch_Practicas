@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins","Kanit",sans-serif;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    height: 15vh;
+    display: flex;
+}
+
+.header__nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-icon{
+    display: none;
+    height: auto;
+    max-height: 100%;
+    cursor: pointer;
+}
+.header__logo{
+    max-height: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #fff;
+}
+
+.header__menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.header__menu-item a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.header__menu-item a:hover{max-height: 70px;
+    cursor: pointer;
+    transition: 0.4ms;
+    background-color: #fff;
+    color: #333;
+}
+
+@media screen and (max-width:1200px) {
+    .header__nav{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:780px)  {
+    .header__nav{
+        max-width: 70%;
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__menu-icon{
+        display: block;
+    }
+    .header__menu.open{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        width: 50%;
+        position: absolute; /* Coloca el menú sobre el contenido */
+        top: 15vh; /* Ajusta según el tamaño del header */
+        right: 0;
+        background-color: #333; /* Asegúrate de que el fondo del menú sea visible */
+        border-radius: 0 0 0 20px;
+    }
+    .header__menu-item{
+        height: 70px;
+        padding-top:  20px;
+        border-bottom: 1px solid #fffffa5b;
+    }
+    .header__menu-item a{
+        color: #fff;
+    }
+}
