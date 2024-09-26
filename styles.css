@@ -55,6 +55,8 @@ body{
 
 .card__header-profile{
     position: absolute;
+    height: 90%;
+    width: auto;
     top: 90px;
     left: 150px;
     border-radius: 50%;
@@ -83,17 +85,22 @@ body{
     position: absolute;
     bottom: 35px;
     width: 100%;
+    font-size: 1.1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 .card__stats{
     display: inline-block;
     margin:0 0.5em;
-    width: 100px;
+    width: auto;
     text-align: center;
 }
 
 .card__number{
-    margin-bottom: 0.5em;
-    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
 }
